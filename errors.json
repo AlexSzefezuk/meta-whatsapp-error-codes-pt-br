@@ -1,0 +1,270 @@
+{
+  "errors": [
+    {
+      "code": 0,
+      "title": "Exceção de Autenticação",
+      "message": "Não foi possível autenticar o usuário do app.",
+      "details": "Geralmente significa que o token expirou ou o usuário revogou o acesso.",
+      "resolution": "Gere um novo token de acesso."
+    },
+    {
+      "code": 190,
+      "title": "Exceção OAuth",
+      "message": "O token de acesso expirou.",
+      "details": "O token foi invalidado ou o usuário alterou a senha/permissões.",
+      "resolution": "Obtenha um novo token de acesso."
+    },
+    {
+      "code": 3,
+      "title": "Método de API",
+      "message": "Capacidade ou permissão ausente.",
+      "details": "O app não tem permissão para chamar este endpoint.",
+      "resolution": "Verifique se as permissões necessárias foram concedidas no painel do app."
+    },
+    {
+      "code": 10,
+      "title": "Permissão Negada",
+      "message": "Permissão negada.",
+      "details": "A permissão não foi concedida ou foi removida.",
+      "resolution": "Adicione a permissão correta ao token de acesso."
+    },
+    {
+      "code": 200,
+      "title": "Permissão de API",
+      "message": "Permissão não concedida.",
+      "details": "O usuário não concedeu a permissão necessária.",
+      "resolution": "Solicite a permissão ao usuário novamente."
+    },
+    {
+      "code": 4,
+      "title": "Muitas Chamadas de API",
+      "message": "O app atingiu o limite da taxa de chamadas de API.",
+      "details": "Muitas requisições em um curto período.",
+      "resolution": "Aguarde e tente novamente mais tarde."
+    },
+    {
+      "code": 80007,
+      "title": "Problemas de Limite de Taxa",
+      "message": "A conta do WhatsApp Business atingiu o limite de taxa.",
+      "details": "Limite de taxa da WABA atingido.",
+      "resolution": "Reduza a frequência de chamadas ou aguarde a janela de tempo resetar."
+    },
+    {
+      "code": 130429,
+      "title": "Limite de Taxa Atingido",
+      "message": "A taxa de transferência de dados de mensagens da API de Nuvem foi atingida.",
+      "details": "Limite de throughput da API atingido.",
+      "resolution": "Tente novamente mais tarde ou reduza a frequência de envio."
+    },
+    {
+      "code": 131048,
+      "title": "Limite de Taxa de Spam Atingido",
+      "message": "Limite de taxa de spam atingido.",
+      "details": "Falha ao enviar devido a restrições no número de mensagens (muitos bloqueios/spam).",
+      "resolution": "Verifique o status de qualidade no Gerenciador do WhatsApp e reduza o volume."
+    },
+    {
+      "code": 131056,
+      "title": "Limite de Taxa de Par Atingido",
+      "message": "Limite de volume de emparelhamento atingido.",
+      "details": "Muitas mensagens enviadas para o mesmo destinatário em um curto período.",
+      "resolution": "Aguarde antes de enviar novamente para este mesmo número."
+    },
+    {
+      "code": 368,
+      "title": "Bloqueado Temporariamente",
+      "message": "Bloqueado temporariamente por violações de políticas.",
+      "details": "A WABA foi restringida ou desabilitada por violar políticas.",
+      "resolution": "Consulte a documentação de Aplicação das Políticas."
+    },
+    {
+      "code": 131031,
+      "title": "Conta Bloqueada",
+      "message": "A conta foi bloqueada.",
+      "details": "A WABA foi restringida ou dados (como PIN 2FA) incorretos.",
+      "resolution": "Verifique a integridade da conta e dados de autenticação."
+    },
+    {
+      "code": 131063,
+      "title": "País Não Suportado",
+      "message": "País não suportado.",
+      "details": "A conta comercial está impedida de enviar mensagens para usuários neste país.",
+      "resolution": "Verifique a lista de países permitidos na política."
+    },
+    {
+      "code": 100,
+      "title": "Parâmetro Inválido",
+      "message": "Parâmetro inválido.",
+      "details": "Um ou mais parâmetros estão incorretos, ou o número não é do WhatsApp.",
+      "resolution": "Verifique os parâmetros e o número do destinatário."
+    },
+    {
+      "code": 131008,
+      "title": "Parâmetro Obrigatório Ausente",
+      "message": "O parâmetro obrigatório está ausente.",
+      "details": "Falta um parâmetro obrigatório no pedido.",
+      "resolution": "Verifique a documentação do endpoint para campos obrigatórios."
+    },
+    {
+      "code": 131009,
+      "title": "Valor de Parâmetro Inválido",
+      "message": "Valor do parâmetro não é válido.",
+      "details": "Um ou mais valores de parâmetros são inválidos ou incompatíveis.",
+      "resolution": "Confira os valores permitidos na referência da API."
+    },
+    {
+      "code": 132000,
+      "title": "Incompatibilidade no Número de Parâmetros do Template",
+      "message": "Número de parâmetros incorreto.",
+      "details": "O número de variáveis enviadas não bate com o modelo.",
+      "resolution": "Envie exatamente o número de variáveis que o template exige."
+    },
+    {
+      "code": 132001,
+      "title": "Template Não Existe",
+      "message": "Modelo não existe.",
+      "details": "O modelo não existe no idioma ou não foi aprovado.",
+      "resolution": "Verifique se o modelo está aprovado e o idioma correto."
+    },
+    {
+      "code": 132005,
+      "title": "Texto do Template Muito Longo",
+      "message": "Texto do modelo muito longo.",
+      "details": "O texto final após substituir as variáveis excede o limite.",
+      "resolution": "Reduza o tamanho dos parâmetros variáveis."
+    },
+    {
+      "code": 132007,
+      "title": "Política de Caracteres do Template Violada",
+      "message": "Política de caracteres violada.",
+      "details": "O conteúdo viola a política de formato.",
+      "resolution": "Revise o conteúdo do modelo."
+    },
+    {
+      "code": 132012,
+      "title": "Template Pausado",
+      "message": "Modelo pausado.",
+      "details": "O modelo foi pausado devido a baixa qualidade (feedback negativo).",
+      "resolution": "Aguarde ou edite o modelo."
+    },
+    {
+      "code": 132015,
+      "title": "Template Desabilitado",
+      "message": "Modelo desabilitado.",
+      "details": "O modelo foi desabilitado permanentemente.",
+      "resolution": "Crie um novo modelo."
+    },
+    {
+      "code": 1,
+      "title": "API Desconhecida",
+      "message": "Erro desconhecido da API.",
+      "details": "Erro genérico no servidor.",
+      "resolution": "Tente novamente mais tarde."
+    },
+    {
+      "code": 2,
+      "title": "Serviço de API",
+      "message": "Serviço indisponível.",
+      "details": "Falha temporária ou sobrecarga.",
+      "resolution": "Verifique o status da API e tente novamente."
+    },
+    {
+      "code": 131000,
+      "title": "Algo Deu Errado",
+      "message": "Ocorreu um erro genérico.",
+      "details": "Falha desconhecida ao processar.",
+      "resolution": "Tente novamente. Se persistir, contate o suporte."
+    },
+    {
+      "code": 131005,
+      "title": "Acesso Negado",
+      "message": "Acesso negado.",
+      "details": "Permissão não concedida ou removida.",
+      "resolution": "Verifique as permissões do token."
+    },
+    {
+      "code": 131016,
+      "title": "Serviço Sobrecarregado",
+      "message": "Serviço sobrecarregado.",
+      "details": "O sistema está com alta carga.",
+      "resolution": "Tente novamente mais tarde."
+    },
+    {
+      "code": 131051,
+      "title": "Erro de Download de Mídia",
+      "message": "Erro de download de mídia.",
+      "details": "Não foi possível baixar a mídia do usuário.",
+      "resolution": "Peça ao usuário para reenviar."
+    },
+    {
+      "code": 131052,
+      "title": "Erro de Upload de Mídia",
+      "message": "Erro de upload de mídia.",
+      "details": "Não foi possível carregar a mídia para envio.",
+      "resolution": "Verifique o formato e tamanho do arquivo."
+    },
+    {
+      "code": 131053,
+      "title": "Tipo de Arquivo de Mídia Não Suportado",
+      "message": "Tipo de arquivo não suportado.",
+      "details": "O formato da mídia não é aceito.",
+      "resolution": "Use apenas formatos suportados (JPG, PNG, MP4, PDF, etc)."
+    },
+    {
+      "code": 131042,
+      "title": "Problema de Pagamento",
+      "message": "Problema com o pagamento.",
+      "details": "Conta de pagamento não vinculada ou limite de crédito excedido.",
+      "resolution": "Verifique as configurações de pagamento na WABA."
+    },
+    {
+      "code": 131055,
+      "title": "Método Não Permitido",
+      "message": "Método não permitido.",
+      "details": "Apenas mensagens de template de marketing são suportadas nesta API.",
+      "resolution": "Use a API correta para o tipo de mensagem."
+    },
+    {
+      "code": 134101,
+      "title": "Template Sincronizando",
+      "message": "O modelo ainda está sincronizando.",
+      "details": "Pode levar até 10 minutos após a criação.",
+      "resolution": "Aguarde alguns minutos e tente novamente."
+    },
+    {
+      "code": 134102,
+      "title": "Template Indisponível",
+      "message": "Modelo indisponível para uso.",
+      "details": "Verifique o status de qualificação da conta.",
+      "resolution": "Contate o suporte se o erro persistir."
+    },
+    {
+      "code": 1752041,
+      "title": "Requisição Duplicada",
+      "message": "Pedido duplicado.",
+      "details": "O cliente já foi convidado para o onboarding por outro parceiro.",
+      "resolution": "Nenhuma ação necessária se o cliente já estiver no processo."
+    },
+    {
+      "code": 131026,
+      "title": "Mensagem Não Entregue",
+      "message": "Mensagem não entregue.",
+      "details": "Destinatário não é usuário do WhatsApp ou bloqueou a empresa.",
+      "resolution": "Verifique o número e status do usuário."
+    },
+    {
+      "code": 131047,
+      "title": "Mensagem de Reengajamento",
+      "message": "Mensagem de reengajamento necessária.",
+      "details": "Passaram-se mais de 24h desde a última mensagem do usuário.",
+      "resolution": "Envie um template para abrir uma nova janela de 24h."
+    },
+    {
+      "code": 130472,
+      "title": "Usuário em Experimento",
+      "message": "O número do usuário faz parte de um experimento.",
+      "details": "A mensagem não foi entregue porque o usuário está em um grupo de teste da Meta.",
+      "resolution": "Não tente reenviar imediatamente."
+    }
+  ]
+}
