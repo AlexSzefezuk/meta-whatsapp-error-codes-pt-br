@@ -265,6 +265,13 @@
       "message": "O número do usuário faz parte de um experimento.",
       "details": "A mensagem não foi entregue porque o usuário está em um grupo de teste da Meta.",
       "resolution": "Não tente reenviar imediatamente."
+    },
+    {
+      "code": 131049,
+      "title": "Entrega bloqueada por limite de marketing",
+      "message": "A Meta optou por não entregar a mensagem para preservar a qualidade do ecossistema.",
+      "details": "Este erro pode ocorrer quando o limite de envio de templates de marketing por número é atingido, especialmente em casos sem interação recente. O bloqueio pode permanecer ativo por períodos variáveis.",
+      "resolution": "Aguarde pelo menos 24 horas antes de tentar novamente e priorize o envio apenas após interação do usuário."
     }
   ]
 }
